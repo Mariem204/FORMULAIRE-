@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulaire validation</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/valid.js" defer>
+	</script>
+</head>
+
+<body>
+	
+
+		<div class="form">
+			<span id="msgnom"></span>
+			<label for="nom">Nom</label>
+			<input name="nom" id="nom" type="text"  placeholder="Veuillez entrer votre nom" required>
+
+			<span id="msgprenom"></span>
+			<label for="prenom">Prenom</label>
+			<input name="prenom" id="prenom" type="text"   placeholder="Veuillez entrer votre prénom"required>
+
+			<label for="datedenaissance"> Date de naissance</label>
+			<input name="dateNaissance" type="date"  placeholder="Veuillez entrer votre date de naissance"required>
+
+			<span id="msgemail"></span>
+			<label for="email">Email</label>
+			<input name="email" id="email" type="email"  placeholder="Veuillez entrer votre E-mail"required>
+
+			<span id="msgcin"></span>
+			<label for="cin">Cin</label>
+			<input name="cin" id="cin" type="number"  placeholder="Veuillez entrer votre numéro de cin"required>
+
+			<span id="msgpsd"></span>
+			<label for="psd">Mot de passe</label>
+			<input name="psd" id="psd" type="password" placeholder="Veuillez entrer votre mot de passe" required>
+			<div class="button">
+				<button onclick="valider()">submit</button>
+			</div>
+ 		</div>
+	</div>
+</body>
+
+</html>
